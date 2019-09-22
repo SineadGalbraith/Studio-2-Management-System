@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22A2D830-C3E3-4676-AB4B-857499CF9B83}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Studio2</RootNamespace>
+    <AssemblyName>Studio2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewClass.Designer.cs">
+      <DependentUpon>AddNewClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewClassMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewClassMenu.Designer.cs">
+      <DependentUpon>AddNewClassMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewMember.Designer.cs">
+      <DependentUpon>AddNewMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewMembership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewMembership.Designer.cs">
+      <DependentUpon>AddNewMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewStaffMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewStaffMember.Designer.cs">
+      <DependentUpon>AddNewStaffMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllocateStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllocateStaff.Designer.cs">
+      <DependentUpon>AllocateStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllocateStaffMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllocateStaffMember.Designer.cs">
+      <DependentUpon>AllocateStaffMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bookings.cs" />
+    <Compile Include="BookingsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingsMenu.Designer.cs">
+      <DependentUpon>BookingsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class.cs" />
+    <Compile Include="ClassMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassMenu.Designer.cs">
+      <DependentUpon>ClassMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassReport.Designer.cs">
+      <DependentUpon>ClassReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetClass.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetClass.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMember.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetMember.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs" />
+    <Compile Include="MemberBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberBookings.Designer.cs">
+      <DependentUpon>MemberBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberCard.Designer.cs">
+      <DependentUpon>MemberCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Membership.cs" />
+    <Compile Include="MembershipMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MembershipMenu.Designer.cs">
+      <DependentUpon>MembershipMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MembersMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MembersMenu.Designer.cs">
+      <DependentUpon>MembersMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchBookings.Designer.cs">
+      <DependentUpon>SearchBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchClass.Designer.cs">
+      <DependentUpon>SearchClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMember.Designer.cs">
+      <DependentUpon>SearchMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMembership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMembership.Designer.cs">
+      <DependentUpon>SearchMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchStaff.Designer.cs">
+      <DependentUpon>SearchStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs" />
+    <Compile Include="StaffClass.cs" />
+    <Compile Include="StaffMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffMenu.Designer.cs">
+      <DependentUpon>StaffMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Studio2Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studio2Menu.Designer.cs">
+      <DependentUpon>Studio2Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeScreen.Designer.cs">
+      <DependentUpon>WelcomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddNewClass.resx">
+      <DependentUpon>AddNewClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewClassMenu.resx">
+      <DependentUpon>AddNewClassMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewMember.resx">
+      <DependentUpon>AddNewMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewMembership.resx">
+      <DependentUpon>AddNewMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewStaffMember.resx">
+      <DependentUpon>AddNewStaffMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllocateStaff.resx">
+      <DependentUpon>AllocateStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllocateStaffMember.resx">
+      <DependentUpon>AllocateStaffMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingsMenu.resx">
+      <DependentUpon>BookingsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassMenu.resx">
+      <DependentUpon>ClassMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassReport.rdlc" />
+    <EmbeddedResource Include="ClassReport.resx">
+      <DependentUpon>ClassReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberBookings.resx">
+      <DependentUpon>MemberBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberCard.rdlc" />
+    <EmbeddedResource Include="MemberCard.resx">
+      <DependentUpon>MemberCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MembershipMenu.resx">
+      <DependentUpon>MembershipMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MembersMenu.resx">
+      <DependentUpon>MembersMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchBookings.resx">
+      <DependentUpon>SearchBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchClass.resx">
+      <DependentUpon>SearchClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMember.resx">
+      <DependentUpon>SearchMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMembership.resx">
+      <DependentUpon>SearchMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchStaff.resx">
+      <DependentUpon>SearchStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffMenu.resx">
+      <DependentUpon>StaffMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Studio2Menu.resx">
+      <DependentUpon>Studio2Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeScreen.resx">
+      <DependentUpon>WelcomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataSetClass.xsc">
+      <DependentUpon>DataSetClass.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetClass.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetClass.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetClass.xss">
+      <DependentUpon>DataSetClass.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMember.xsc">
+      <DependentUpon>DataSetMember.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMember.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMember.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetMember.xss">
+      <DependentUpon>DataSetMember.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Studio2Logo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Studio2Logo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
